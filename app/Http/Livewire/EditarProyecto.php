@@ -92,10 +92,7 @@ class EditarProyecto extends Component
 
             $imagen = Image::make($this->nuevaImagen);
 
-            $imagen->fit(1000,1000, function ($constraint) {
-                $constraint->aspectRatio(); // Mantén la proporción de aspecto
-                $constraint->upsize(); // Evita que la imagen se agrande
-            });
+        
             
             $generarNombre = Str::random(50) . "." . $imagen->extension;
 

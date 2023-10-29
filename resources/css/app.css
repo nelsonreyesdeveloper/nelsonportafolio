@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.placeholder-pg-primary-400{
+    color:red;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
